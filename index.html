@@ -1,25 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ma Boutique</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ma Boutique en Ligne</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    a.btn {
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+      animation: fadeIn 2s ease-out;
+    }
+
+    a.btn:hover {
+      background-color: #ff8533;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Bienvenue sur ma boutique</h1>
-    <button onclick="window.location.href='products.html'">Visite ma boutique</button>
-  </header>
-
-  <section>
-    <h2>Qui sommes-nous ?</h2>
-    <p>Nous proposons des articles neufs ou d'occasion, disponibles uniquement en ligne.</p>
-  </section>
-
+  <div class="overlay">
+    <h1>Bienvenue sur Ma Boutique</h1>
+    <p>Découvrez des articles tendance, neufs ou d’occasion, soigneusement sélectionnés pour vous.</p>
+    <a href="#" class="btn">Visiter la boutique</a>
+  </div>
   <footer>
-    <p>Contact : <a href="https://www.snapchat.com/add/ton_snap_username" target="_blank">@ton_snap_username</a></p>
-    <a href="privacy.html">Politique de confidentialité</a>
+    <p>© 2025 Ma Boutique — <a href="#" style="color: #ff6600;">Politique de confidentialité</a></p>
   </footer>
 </body>
 </html>
+
