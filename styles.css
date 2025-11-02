@@ -1,99 +1,75 @@
-/* Styles globaux */
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  background-color: #fafafa;
-}
+/* --- PAGE PRODUITS --- */
 
-/* Section d’accueil avec fond */
-.hero-section {
-  position: relative;
-  height: 100vh;
-  background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.products-header {
   text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(to right, #ff6600, #ff9900);
   color: white;
 }
 
-.overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+.products-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content h1 span {
-  color: #ffcc00;
-}
-
-.hero-content p {
+.products-header p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  opacity: 0.9;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #ff6600;
-  color: white;
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.price {
+  font-size: 1.1rem;
   font-weight: bold;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
+  color: #ff6600;
 }
 
-.cta-button:hover {
+.product-card button {
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 15px 0 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.product-card button:hover {
   background-color: #ff8800;
   transform: scale(1.05);
-}
-
-/* Section “Qui sommes-nous ?” */
-.about {
-  padding: 60px 20px;
-  text-align: center;
-  background: #fff;
-}
-
-.about h2 {
-  color: #ff6600;
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.about p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Footer */
-footer {
-  background: #222;
-  color: #eee;
-  text-align: center;
-  padding: 20px;
-}
-
-footer a {
-  color: #ffcc00;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
