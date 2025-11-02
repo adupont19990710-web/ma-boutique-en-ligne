@@ -4,7 +4,7 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('https://images.unsplash.com/photo-1606813902917-2765b27b6a3a?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+    url('shop.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
   margin: 0;
