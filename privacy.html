@@ -6,35 +6,49 @@
   <title>Politique de Confidentialité - Ma Boutique</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Style spécifique à la page Confidentialité */
+    /* Arrière-plan cohérent avec l'accueil */
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('shop.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-light);
+      margin: 0;
+    }
+
+    /* Bloc principal */
     .privacy-container {
       max-width: 900px;
-      margin: 120px auto 60px;
-      padding: 40px;
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 15px;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      margin: 140px auto 80px;
+      padding: 50px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1s ease-in-out;
     }
 
     .privacy-container h1 {
       color: var(--primary-color);
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 2.2rem;
+      margin-bottom: 35px;
+      font-size: 2.3rem;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     }
 
     .privacy-container h2 {
       color: var(--secondary-color);
-      margin-top: 30px;
+      margin-top: 35px;
       margin-bottom: 15px;
+      font-size: 1.3rem;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 10px;
     }
 
     .privacy-container p {
-      color: var(--text-light);
       line-height: 1.8;
       margin-bottom: 15px;
-      font-size: 1rem;
+      color: #f3f3f3;
     }
 
     .privacy-container ul {
@@ -43,11 +57,17 @@
     }
 
     .privacy-container li {
-      background-color: rgba(255, 255, 255, 0.07);
-      padding: 10px 15px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 12px 18px;
       margin-bottom: 10px;
-      border-left: 4px solid var(--primary-color);
-      border-radius: 6px;
+      border-left: 3px solid var(--primary-color);
+      border-radius: 8px;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .privacy-container li:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+      transform: translateX(5px);
     }
 
     .privacy-container a {
@@ -57,6 +77,28 @@
 
     .privacy-container a:hover {
       color: var(--secondary-color);
+    }
+
+    /* Animation d’apparition douce */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Pied de page */
+    .footer {
+      text-align: center;
+      padding: 25px 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 0.9rem;
+      color: #ccc;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
   </style>
 </head>
@@ -72,29 +114,30 @@
     </ul>
   </header>
 
+  <!-- Contenu principal -->
   <section class="privacy-container">
     <h1>Politique de Confidentialité</h1>
 
-    <p>Votre vie privée est importante pour nous. Cette politique explique comment nous collectons, utilisons et protégeons vos données personnelles lorsque vous visitez notre site <strong>Ma Boutique</strong>.</p>
+    <p>Chez <strong>Ma Boutique</strong>, nous respectons votre vie privée. Cette politique décrit comment nous collectons, utilisons et protégeons vos données personnelles.</p>
 
     <h2>1. Collecte des Informations</h2>
-    <p>Nous collectons uniquement les informations nécessaires à l'amélioration de nos services et à la gestion des commandes. Ces données incluent votre nom, adresse e-mail et informations de livraison.</p>
+    <p>Nous recueillons uniquement les informations nécessaires à la gestion de vos commandes et à l'amélioration de nos services. Ces données peuvent inclure votre nom, votre adresse e-mail et vos coordonnées de livraison.</p>
 
     <h2>2. Utilisation des Données</h2>
     <ul>
-      <li>Améliorer l’expérience utilisateur</li>
-      <li>Traiter vos commandes et livraisons</li>
-      <li>Vous informer des offres et promotions</li>
+      <li>Améliorer l’expérience utilisateur sur le site</li>
+      <li>Assurer le traitement et le suivi des commandes</li>
+      <li>Vous informer de nos offres et nouveautés</li>
     </ul>
 
     <h2>3. Protection des Données</h2>
-    <p>Vos données sont stockées de manière sécurisée et ne sont jamais partagées avec des tiers sans votre consentement explicite.</p>
+    <p>Nous mettons en place des mesures de sécurité avancées pour protéger vos informations personnelles contre tout accès non autorisé ou divulgation.</p>
 
     <h2>4. Cookies</h2>
-    <p>Notre site utilise des cookies pour personnaliser votre navigation et analyser le trafic. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur.</p>
+    <p>Nous utilisons des cookies afin d’analyser le trafic et d’adapter le contenu à vos préférences. Vous pouvez les désactiver dans les paramètres de votre navigateur.</p>
 
     <h2>5. Contact</h2>
-    <p>Pour toute question concernant notre politique de confidentialité, vous pouvez nous contacter à <a href="mailto:support@maboutique.com">support@maboutique.com</a>.</p>
+    <p>Pour toute question sur cette politique, contactez-nous à <a href="mailto:support@maboutique.com">support@maboutique.com</a>.</p>
   </section>
 
   <footer class="footer">
