@@ -1,20 +1,43 @@
-[
-  {
-    "name": "Ordinateur portable HP",
-    "price": "450€",
-    "image": "https://via.placeholder.com/250x150?text=HP+Laptop",
-    "description": "PC portable reconditionné, parfait pour le télétravail."
-  },
-  {
-    "name": "Casque audio Sony",
-    "price": "80€",
-    "image": "https://via.placeholder.com/250x150?text=Casque+Sony",
-    "description": "Casque sans fil avec réduction de bruit."
-  },
-  {
-    "name": "iPhone 12",
-    "price": "520€",
-    "image": "https://via.placeholder.com/250x150?text=iPhone+12",
-    "description": "Occasion en excellent état, batterie 90%."
-  }
-]
+{
+  "laptops": [
+    {
+      "name": "Acer TravelMate P215-52",
+      "description": "Intel(R) Core(TM) i7-10510U CPU - 1.80GHz, 2304 MHz, 4 cœur(s), 8 processeur(s) logique(s) Excellent état",
+      "price": "190 €",
+      "image": "TravelMate_P215-52.png"
+    },
+    {
+      "name": "Dell Latitude E7450",
+      "description": "Intel i7, 16 Go RAM, SSD 512 Go – Bon état",
+      "price": "349 €",
+      "image": "Public/laptop2.jpg"
+    },
+    {
+      "name": "Lenovo ThinkPad T480",
+      "description": "Intel i5, 8 Go RAM, SSD 256 Go – Garantie 3 mois",
+      "price": "329 €",
+      "image": "Public/laptop3.jpg"
+    }
+  ],
+
+  "desktops": [
+    {
+      "name": "Dell OptiPlex 7020",
+      "description": "Intel i5, 8 Go RAM, HDD 500 Go – Bon état",
+      "price": "179 €",
+      "image": "Public/desktop1.jpg"
+    },
+    {
+      "name": "HP ProDesk 600 G2",
+      "description": "Intel i7, 16 Go RAM, SSD 240 Go – Excellent état",
+      "price": "249 €",
+      "image": "Public/desktop2.jpg"
+    },
+    {
+      "name": "Lenovo ThinkCentre M910s",
+      "description": "Intel i5, 8 Go RAM, SSD 256 Go – Reconditionné",
+      "price": "229 €",
+      "image": "Public/desktop3.jpg"
+    }
+  ]
+}

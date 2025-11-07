@@ -1,54 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Produits - Ma Boutique</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Produits – PC portables & unités centrales</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="products-header">
-        <h1>Nos Produits</h1>
-        <p>Découvrez notre sélection d’articles disponibles en ligne.</p>
-        <a href="index.html" class="btn back-btn">← Retour à l’accueil</a>
-    </header>
 
-    <section class="products-grid">
-        <div class="product-card">
-            <img src="montre.jpg" alt="Montre">
-            <h3>Montre élégante</h3>
-            <p>Montre moderne en acier inoxydable, parfaite pour toutes les occasions.</p>
-            <span class="price">59,99 €</span>
-            <a href="#" class="btn">Acheter</a>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h1 class="logo">Ma Boutique</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="products.html" class="active">Produits</a></li>
+      <li><a href="privacy.html">Confidentialité</a></li>
+      <li><a href="mailto:adupont19990710@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
 
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1593032457868-9a925ce8e1d7?auto=format&fit=crop&w=500&q=80" alt="Casque audio">
-            <h3>Casque Bluetooth</h3>
-            <p>Un son immersif et une autonomie longue durée pour les passionnés de musique.</p>
-            <span class="price">89,99 €</span>
-            <a href="#" class="btn">Acheter</a>
-        </div>
+  <header class="hero products-hero">
+    <div class="hero-content">
+      <h2>Nos produits d’occasion</h2>
+      <p>Tous nos ordinateurs sont testés, nettoyés et garantis.</p>
+    </div>
+  </header>
 
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=500&q=80" alt="Lunettes">
-            <h3>Lunettes de soleil</h3>
-            <p>Protection UV400 et design tendance pour un look parfait.</p>
-            <span class="price">39,99 €</span>
-            <a href="#" class="btn">Acheter</a>
-        </div>
+  <!-- Conteneurs produits -->
+  <section class="product-section">
+    <div class="container">
+      <h2>PC portables</h2>
+      <div id="laptops" class="product-grid"></div>
+    </div>
+  </section>
 
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1581291519195-ef11498d1cf5?auto=format&fit=crop&w=500&q=80" alt="Sac à dos">
-            <h3>Sac à dos urbain</h3>
-            <p>Pratique et élégant, idéal pour le travail ou les voyages.</p>
-            <span class="price">49,99 €</span>
-            <a href="#" class="btn">Acheter</a>
-        </div>
-    </section>
+  <section class="product-section">
+    <div class="container">
+      <h2>Unités centrales</h2>
+      <div id="desktops" class="product-grid"></div>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <p>© 2025 Ma Boutique - Tous droits réservés.</p>
-    </footer>
+  <footer class="footer">
+    <p>&copy; 2025 Ma Boutique en Ligne – Tous droits réservés.</p>
+    <p><a href="privacy.html">Politique de confidentialité</a></p>
+  </footer>
+
+  <script>
+    // Chargement dynamique des produits depuis products.json
+    fetch('products.json')
+      .then(response => response.json())
+      .then(data => {
+        afficherProduits(data.laptops, 'laptops');
+        afficherProduits(data.desktops, 'desktops');
+      })
+      .catch(error => console.error('Erreur chargement produits :', error));
+
+    // Fonction d'affichage
+    function afficherProduits(produits, idSection) {
+      const section = document.getElementById(idSection);
+      produits.forEach(p => {
+        const card = document.createElement('div');
+        card.classList.add('product-card');
+        card.innerHTML = `
+          <img src="${p.image}" alt="${p.name}">
+          <h3>${p.name}</h3>
+          <p>${p.description}</p>
+          <span class="price">${p.price}</span>
+          <a href="#" class="btn-secondary">Je suis intéressé(e)</a>
+        `;
+        section.appendChild(card);
+      });
+    }
+  </script>
+
 </body>
 </html>
