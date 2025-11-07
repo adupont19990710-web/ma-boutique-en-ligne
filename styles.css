@@ -255,3 +255,31 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+/* === Style spécifique à la page de confidentialité === */
+body.privacy-page {
+  background: url('images/fond-accueil.jpg') no-repeat center center/cover;
+  color: #fff;
+}
+
+.privacy-container {
+  background: rgba(0, 0, 0, 0.6);
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.privacy-container h1,
+.privacy-container h2 {
+  color: #ff7a00; /* même orange que l'accueil */
+}
+
+.privacy-container a {
+  color: #ffd580;
+  text-decoration: underline;
+}
+
+.privacy-container a:hover {
+  color: #ff9c33;
+}
