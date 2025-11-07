@@ -3,39 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité</title>
+  <title>Politique de Confidentialité - Ma Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style spécifique à la page Confidentialité */
+    .privacy-container {
+      max-width: 900px;
+      margin: 120px auto 60px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .privacy-container h1 {
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+    }
+
+    .privacy-container h2 {
+      color: var(--secondary-color);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .privacy-container p {
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .privacy-container ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .privacy-container li {
+      background-color: rgba(255, 255, 255, 0.07);
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-left: 4px solid var(--primary-color);
+      border-radius: 6px;
+    }
+
+    .privacy-container a {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    .privacy-container a:hover {
+      color: var(--secondary-color);
+    }
+  </style>
 </head>
 <body>
-  <h1>Politique de confidentialité</h1>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Ma Boutique</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="produits.html">Produits</a></li>
+      <li><a href="privacy.html" class="active">Confidentialité</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
 
-  <p>Dernière mise à jour : 7 novembre 2025</p>
+  <section class="privacy-container">
+    <h1>Politique de Confidentialité</h1>
 
-  <h2>1. Responsable du traitement</h2>
-  <p>Le site SECONDE MAIN est édité par X, situé en Ile de France.  
-  Vous pouvez nous contacter à l’adresse : adupont19990710@gmail.com.</p>
+    <p>Votre vie privée est importante pour nous. Cette politique explique comment nous collectons, utilisons et protégeons vos données personnelles lorsque vous visitez notre site <strong>Ma Boutique</strong>.</p>
 
-  <h2>2. Données collectées</h2>
-  <p>Nous pouvons collecter les informations suivantes : nom, prénom, adresse e-mail, données de connexion, statistiques de navigation (via cookies).</p>
+    <h2>1. Collecte des Informations</h2>
+    <p>Nous collectons uniquement les informations nécessaires à l'amélioration de nos services et à la gestion des commandes. Ces données incluent votre nom, adresse e-mail et informations de livraison.</p>
 
-  <h2>3. Finalités du traitement</h2>
-  <p>Les données collectées servent à améliorer nos services, gérer les demandes de contact et assurer le bon fonctionnement du site.</p>
+    <h2>2. Utilisation des Données</h2>
+    <ul>
+      <li>Améliorer l’expérience utilisateur</li>
+      <li>Traiter vos commandes et livraisons</li>
+      <li>Vous informer des offres et promotions</li>
+    </ul>
 
-  <h2>4. Base légale</h2>
-  <p>Le traitement est fondé sur votre consentement ou sur l’exécution d’un contrat lorsque vous utilisez nos services.</p>
+    <h2>3. Protection des Données</h2>
+    <p>Vos données sont stockées de manière sécurisée et ne sont jamais partagées avec des tiers sans votre consentement explicite.</p>
 
-  <h2>5. Durée de conservation</h2>
-  <p>Les données sont conservées pour une durée maximale de 2 mois, sauf obligation légale contraire.</p>
+    <h2>4. Cookies</h2>
+    <p>Notre site utilise des cookies pour personnaliser votre navigation et analyser le trafic. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur.</p>
 
-  <h2>6. Droits des utilisateurs</h2>
-  <p>Conformément au RGPD, vous disposez d’un droit d’accès, de rectification, d’effacement et d’opposition.  
-  Pour exercer ces droits, contactez-nous à : X.</p>
+    <h2>5. Contact</h2>
+    <p>Pour toute question concernant notre politique de confidentialité, vous pouvez nous contacter à <a href="mailto:support@maboutique.com">support@maboutique.com</a>.</p>
+  </section>
 
-  <h2>7. Cookies</h2>
-  <p>Ce site utilise des cookies pour mesurer l’audience et améliorer l’expérience utilisateur. Vous pouvez les gérer via les paramètres de votre navigateur.</p>
-
-  <h2>8. Contact</h2>
-  <p>Pour toute question concernant cette politique, contactez-nous à X ou sur nos réseaux sociaux.</p>
-
-  <a href="index.html">Retour à l'accueil</a>
+  <footer class="footer">
+    <p>&copy; 2025 Ma Boutique – Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
