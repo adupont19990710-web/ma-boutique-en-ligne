@@ -265,7 +265,7 @@ body.privacy-page {
   padding: 0;
 }
 
-/* Conteneur principal */
+/* Main container for privacy page */
 .privacy-container {
   max-width: 900px;
   background: rgba(0, 0, 0, 0.65);
@@ -276,10 +276,10 @@ body.privacy-page {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* Titres */
+/* Titles */
 .privacy-container h1 {
   text-align: center;
-  color: #ff7a00; /* Orange identique au thème */
+  color: #ff7a00; /* Orange theme */
   margin-bottom: 30px;
   font-size: 2.2em;
   letter-spacing: 1px;
@@ -292,7 +292,7 @@ body.privacy-page {
   margin-top: 30px;
 }
 
-/* Liens */
+/* Links */
 .privacy-container a {
   color: #ffb84d;
   font-weight: 600;
@@ -304,13 +304,13 @@ body.privacy-page {
   color: #ff8c1a;
 }
 
-/* Paragraphes */
+/* Paragraphs */
 .privacy-container p {
   margin-top: 10px;
   text-align: justify;
 }
 
-/* Pied de page */
+/* Footer */
 footer {
   text-align: center;
   padding: 30px 0;
@@ -320,16 +320,28 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Liens du menu en haut (si besoin d’un contraste plus fort ici aussi) */
+/* Nav links contrast on privacy page */
 body.privacy-page header nav a {
   color: #fff;
-  transition: color 0.3s;
 }
 
 body.privacy-page header nav a:hover,
 body.privacy-page header nav a.active {
   color: #ff7a00;
 }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .privacy-container {
+    margin: 80px 20px;
+    padding: 30px 20px;
+  }
+
+  .privacy-container h1 {
+    font-size: 1.8em;
+  }
+}
+
 
 
 
