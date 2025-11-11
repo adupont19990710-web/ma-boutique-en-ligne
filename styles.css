@@ -253,34 +253,102 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
-/* === Style spécifique à la page de confidentialité === */
+
+/* === STYLE SPÉCIFIQUE À LA PAGE DE CONFIDENTIALITÉ === */
 body.privacy-page {
-  background: url('images/fond-accueil.jpg') no-repeat center center/cover;
-  color: #fff;
+  background: url('images/shop.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5;
+  font-family: "Poppins", "Segoe UI", sans-serif;
 }
 
+/* Conteneur principal */
 .privacy-container {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(15, 15, 15, 0.75);
   max-width: 900px;
-  margin: 100px auto;
-  padding: 40px;
-  border-radius: 15px;
-  backdrop-filter: blur(5px);
+  margin: 120px auto;
+  padding: 50px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
 }
 
-.privacy-container h1,
+/* Titres */
+.privacy-container h1 {
+  color: #ff7a00;
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
 .privacy-container h2 {
-  color: #ff7a00; /* même orange que l'accueil */
+  color: #ff9c33;
+  font-size: 1.4em;
+  margin-top: 40px;
+  border-left: 4px solid #ff7a00;
+  padding-left: 10px;
 }
 
+/* Paragraphes et texte */
+.privacy-container p {
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+/* Liens */
 .privacy-container a {
-  color: #ffd580;
-  text-decoration: underline;
+  color: #ffb84d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .privacy-container a:hover {
-  color: #ff9c33;
+  color: #ff7a00;
+  text-decoration: underline;
 }
+
+/* Séparateurs */
+.privacy-container hr {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 30px 0;
+}
+
+/* Animation douce d’apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .privacy-container {
+    margin: 80px 20px;
+    padding: 30px 25px;
+  }
+
+  .privacy-container h1 {
+    font-size: 1.8em;
+  }
+
+  .privacy-container h2 {
+    font-size: 1.2em;
+  }
+}
+
+
 ------------------------------------------------------
 /* Corrige le collage à gauche de la page produits */
 ------------------------------------------------------
