@@ -281,3 +281,10 @@ body.privacy-page {
 .privacy-container a:hover {
   color: #ff9c33;
 }
+/* Corrige le collage à gauche de la page produits */
+.products-section,
+.products-container,
+.container {
+    padding-left: 40px; /* espace à gauche */
+    padding-right: 40px; /* équilibre à droite aussi */
+}
