@@ -16,7 +16,7 @@
       "name": "Lenovo ThinkPad T480",
       "description": "Intel i5, 8 Go RAM, SSD 256 Go – Garantie 3 mois",
       "price": "329 €",
-      "image": "Public/laptop3.jpg"
+      "image": "Dell.png"
     }
   ],
 
@@ -24,8 +24,8 @@
     {
       "name": "Dell OptiPlex 7020",
       "description": "Intel i5, 8 Go RAM, HDD 500 Go – Bon état",
-      "price": "179 €",
-      "image": "Public/desktop1.jpg"
+      "price": "50 €",
+      "image": "Dell.png"
     },
     {
       "name": "HP ProDesk 600 G2",
