@@ -208,8 +208,8 @@ a:hover {
 
 .product-card img {
   width: 80%;
-  height: 100px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   border-radius: 10px;
   margin-bottom: 15px;
 }
