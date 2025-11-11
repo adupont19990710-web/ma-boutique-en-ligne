@@ -256,7 +256,7 @@ a:hover {
 
 /* === STYLE SPÉCIFIQUE À LA PAGE DE CONFIDENTIALITÉ === */
 body.privacy-page {
-  background: url('images/shop.png') no-repeat center center fixed;
+  background: url('images/boutique.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
   color: #f5f5f5;
