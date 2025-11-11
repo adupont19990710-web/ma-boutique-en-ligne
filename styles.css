@@ -258,95 +258,79 @@ a:hover {
 body.privacy-page {
   background: url('images/shop.png') no-repeat center center fixed;
   background-size: cover;
+  font-family: 'Poppins', sans-serif;
   color: #f5f5f5;
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
 }
 
 /* Conteneur principal */
 .privacy-container {
-  background: rgba(15, 15, 15, 0.75);
   max-width: 900px;
-  margin: 120px auto;
-  padding: 50px 60px;
-  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 18px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
-  animation: fadeIn 1s ease-in-out;
 }
 
 /* Titres */
 .privacy-container h1 {
-  color: #ff7a00;
-  font-size: 2.2em;
   text-align: center;
+  color: #ff7a00; /* Orange identique au thème */
   margin-bottom: 30px;
+  font-size: 2.2em;
   letter-spacing: 1px;
 }
 
 .privacy-container h2 {
-  color: #ff9c33;
-  font-size: 1.4em;
-  margin-top: 40px;
+  color: #ffa64d;
   border-left: 4px solid #ff7a00;
   padding-left: 10px;
-}
-
-/* Paragraphes et texte */
-.privacy-container p {
-  line-height: 1.8;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: #e0e0e0;
+  margin-top: 30px;
 }
 
 /* Liens */
 .privacy-container a {
   color: #ffb84d;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s;
 }
 
 .privacy-container a:hover {
+  color: #ff8c1a;
+}
+
+/* Paragraphes */
+.privacy-container p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #ddd;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Liens du menu en haut (si besoin d’un contraste plus fort ici aussi) */
+body.privacy-page header nav a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+body.privacy-page header nav a:hover,
+body.privacy-page header nav a.active {
   color: #ff7a00;
-  text-decoration: underline;
 }
 
-/* Séparateurs */
-.privacy-container hr {
-  border: none;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 30px 0;
-}
-
-/* Animation douce d’apparition */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive (mobile) */
-@media (max-width: 768px) {
-  .privacy-container {
-    margin: 80px 20px;
-    padding: 30px 25px;
-  }
-
-  .privacy-container h1 {
-    font-size: 1.8em;
-  }
-
-  .privacy-container h2 {
-    font-size: 1.2em;
-  }
-}
 
 
 ------------------------------------------------------
